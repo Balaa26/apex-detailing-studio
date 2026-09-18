@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX AUTO LABS | Multi-Brand Diagnostics & Performance Detailing</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #05070d;
+      color: #f1f5f9;
+      overflow-x: hidden;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .glow-bg {
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 60%, rgba(59, 130, 246, 0.08) 0%, transparent 45%),
+        linear-gradient(to bottom, #05070d, #080d1a 60%, #05070d);
+    }
+
+    .glass {
+      background: rgba(13, 19, 33, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px -10px rgba(245, 158, 11, 0.2);
+    }
+
+    .pulse-ring {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+      70% { transform: scale(1.15); box-shadow: 0 0 0 14px rgba(245, 158, 11, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-black">
+
+  <!-- ================= TOP EMERGENCY STATUS ================= -->
+  <div class="bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-bold text-xs py-2 px-4 flex flex-wrap justify-between items-center tracking-tight gap-2">
+    <div class="flex items-center gap-2">
+      <span class="h-2 w-2 rounded-full bg-slate-950 animate-ping"></span>
+      <span>MULTI-BRAND GERMAN DIAGNOSTIC SPECIALISTS & CERAMIC LAB</span>
+    </div>
+    <a href="tel:+919159855555" class="inline-flex items-center gap-1.5 font-extrabold hover:underline">
+      <i data-lucide="phone-call" class="h-3.5 w-3.5"></i> Emergency Line: +91 91598 55555
+    </a>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-50 glass border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-amber-500/20">
+          <i data-lucide="wrench" class="h-5 w-5 stroke-[2.5]"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-xl tracking-tight text-white flex items-center gap-1.5">
+            APEX <span class="text-amber-400">LABS</span>
+          </span>
+          <span class="block text-[9px] font-mono tracking-widest text-slate-400 uppercase font-semibold">Diagnostic & Detailing Studio</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#schematic" class="hover:text-amber-400 transition">Interactive Bay</a>
+        <a href="#services" class="hover:text-amber-400 transition">Services</a>
+        <a href="#calculator" class="hover:text-amber-400 transition">Cost Calculator</a>
+        <a href="#contact" class="hover:text-amber-400 transition">Location</a>
+      </nav>
+
+      <a href="#book" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-5 py-2.5 rounded-xl font-extrabold text-xs uppercase tracking-wider transition shadow-lg shadow-amber-500/20">
+        Book Bay Slot
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO & INTERACTIVE VEHICLE HUD ================= -->
+  <section id="schematic" class="glow-bg pt-12 pb-24 border-b border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Headline -->
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider">
+          <i data-lucide="crosshair" class="h-3.5 w-3.5"></i> Tap Hotspots To Inspect Systems
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight">
+          DIGITAL DIAGNOSTICS & <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500">PRECISION CAR CARE.</span>
+        </h1>
+        <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+          Dealer-grade OBD-II engine calibration, automatic transmission flushes, and 10H ceramic shield applications performed in sterile bays.
+        </p>
+      </div>
+
+      <!-- Workshop Bay Telemetry Ticker -->
+      <div class="max-w-4xl mx-auto mb-8 grid grid-cols-3 gap-3">
+        <div class="glass p-3.5 rounded-xl border border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-xs font-mono text-slate-300">Bay 01: Diagnostics</span>
+          </div>
+          <span class="text-[10px] font-mono text-emerald-400 uppercase font-bold">Active</span>
+        </div>
+        <div class="glass p-3.5 rounded-xl border border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
+            <span class="text-xs font-mono text-slate-300">Bay 02: Ceramic Lab</span>
+          </div>
+          <span class="text-[10px] font-mono text-amber-400 uppercase font-bold">10H Curing</span>
+        </div>
+        <div class="glass p-3.5 rounded-xl border border-white/10 flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="h-2.5 w-2.5 rounded-full bg-blue-400"></span>
+            <span class="text-xs font-mono text-slate-300">Bay 03: Mechanical</span>
+          </div>
+          <span class="text-[10px] font-mono text-blue-400 uppercase font-bold">Ready</span>
+        </div>
+      </div>
+
+      <!-- Interactive Vehicle Blueprint HUD -->
+      <div class="max-w-5xl mx-auto glass rounded-3xl p-6 sm:p-10 border border-white/10 relative overflow-hidden shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Car Blueprint Graphic with Hotspots -->
+          <div class="lg:col-span-8 relative flex items-center justify-center p-2">
+            <div class="relative w-full max-w-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" 
+                alt="Automotive Inspection Chassis" 
+                class="w-full h-64 sm:h-80 object-cover rounded-2xl border border-white/10 filter brightness-90 contrast-125"
+              />
+              
+              <!-- Hotspots -->
+              <button onclick="showHotspot('engine')" class="absolute top-1/2 left-[15%] -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-amber-500/80 border-2 border-white flex items-center justify-center pulse-ring shadow-lg cursor-pointer" title="Engine Diagnostics">
+                <i data-lucide="cpu" class="h-4 w-4 text-slate-950 font-bold"></i>
+              </button>
+              <button onclick="showHotspot('paint')" class="absolute top-[28%] left-[50%] -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-amber-500/80 border-2 border-white flex items-center justify-center pulse-ring shadow-lg cursor-pointer" title="Ceramic Paint Shield">
+                <i data-lucide="shield" class="h-4 w-4 text-slate-950 font-bold"></i>
+              </button>
+              <button onclick="showHotspot('wheels')" class="absolute top-[68%] left-[78%] -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-amber-500/80 border-2 border-white flex items-center justify-center pulse-ring shadow-lg cursor-pointer" title="Brakes & Alignment">
+                <i data-lucide="disc" class="h-4 w-4 text-slate-950 font-bold"></i>
+              </button>
+              <button onclick="showHotspot('cabin')" class="absolute top-[40%] left-[60%] -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-amber-500/80 border-2 border-white flex items-center justify-center pulse-ring shadow-lg cursor-pointer" title="Ozone Cabin Spa">
+                <i data-lucide="sparkles" class="h-4 w-4 text-slate-950 font-bold"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- HUD Telemetry Card -->
+          <div class="lg:col-span-4 bg-slate-950/80 p-6 rounded-2xl border border-white/10 flex flex-col justify-between h-full min-h-[300px]">
+            <div>
+              <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+                <span class="text-[10px] font-mono text-amber-400 uppercase tracking-widest font-bold">Telemetry HUD</span>
+                <span class="text-[10px] font-mono text-slate-400" id="hud-id">SYS-ENG-01</span>
+              </div>
+              <h3 class="text-xl font-black text-white" id="hud-title">ECU & Powertrain Diagnostics</h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed" id="hud-desc">
+                High-frequency OBD-II scan protocols analyzing fuel-trim ratios, turbo boost pressure, and ignition timing adaptations.
+              </p>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 space-y-2 font-mono text-xs">
+              <div class="flex justify-between">
+                <span class="text-slate-400">Standard Labor:</span>
+                <span class="text-amber-400 font-bold" id="hud-time">45 Minutes</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-400">Calibration Spec:</span>
+                <span class="text-emerald-400 font-bold" id="hud-spec">OEM Direct Adaptation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SERVICES MATRIX ================= -->
+  <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-amber-400 font-mono text-xs uppercase font-bold tracking-widest">Master Treatments</span>
+      <h2 class="text-3xl sm:text-5xl font-black text-white mt-2">Precision Workshop Suite</h2>
+      <p class="text-slate-400 text-sm mt-3">Engineered procedures performed by senior technicians with specialized multi-brand toolsets.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="cpu" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">Full Computer Diagnostics</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Comprehensive OBD-II scan to clear EPC & check-engine warnings, diagnose timing delays, test actuators, and recode injectors.
+        </p>
+      </div>
+
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="shield-check" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">10H Graphene Ceramic Coat</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Ultra-hydrophobic surface matrix repelling water, road acids, UV degradation, and bird etching with lasting wet-look gloss.
+        </p>
+      </div>
+
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="wrench" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">Periodic Service & Oil Flush</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Synthetic Motul oil refill, genuine filter renewal, spark plug checks, 50-point hoist inspection, and brake fluid renewal.
+        </p>
+      </div>
+
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="wind" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">HVAC & Ozone AC Treatment</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Evaporator pressure wash, replacement of activated cabin pollen filters, and high-purity compressor gas top-ups.
+        </p>
+      </div>
+
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="paint-bucket" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">Boutique Paint Correction</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Three-stage rotary and orbital compounding eliminating 90%+ of swirl marks, light oxidation, and surface scratches.
+        </p>
+      </div>
+
+      <div class="glass glass-card p-8 rounded-3xl">
+        <div class="h-12 w-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+          <i data-lucide="sparkles" class="h-6 w-6"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">Deep Interior Spa Care</h3>
+        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+          Steam extraction of seats and carpets, roof upholstery sanitation, leather conditioning, and elimination of persistent odors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ESTIMATE CALCULATOR ================= -->
+  <section id="calculator" class="py-20 bg-slate-950/70 border-y border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <span class="text-amber-400 font-mono text-xs uppercase font-bold tracking-widest">Instant Transparency</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Service & Pricing Calculator</h2>
+        <p class="text-slate-400 text-sm mt-2">Select your segment and required treatments for instant estimates.</p>
+      </div>
+
+      <div class="glass p-8 rounded-3xl border border-white/10">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <button type="button" class="vehicle-btn active p-4 rounded-xl border border-amber-400 bg-amber-400/10 text-amber-300 font-bold text-sm text-center" data-multiplier="1">
+            Hatchback / Premium
+          </button>
+          <button type="button" class="vehicle-btn p-4 rounded-xl border border-white/10 text-slate-300 font-bold text-sm text-center hover:border-amber-400" data-multiplier="1.2">
+            Sedan / Compact SUV
+          </button>
+          <button type="button" class="vehicle-btn p-4 rounded-xl border border-white/10 text-slate-300 font-bold text-sm text-center hover:border-amber-400" data-multiplier="1.45">
+            Full Size SUV / German Luxury
+          </button>
+        </div>
+
+        <div class="space-y-3 mb-8">
+          <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-white/5 cursor-pointer">
+            <span class="flex items-center gap-3 text-sm">
+              <input type="checkbox" class="calc-service accent-amber-400 h-4 w-4" value="2800" checked />
+              Standard Periodic Service (Synthetic Oil + Filter + 50-pt Hoist Check)
+            </span>
+            <span class="text-xs font-mono text-amber-400 font-bold">₹2,800 base</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-white/5 cursor-pointer">
+            <span class="flex items-center gap-3 text-sm">
+              <input type="checkbox" class="calc-service accent-amber-400 h-4 w-4" value="1500" />
+              Complete Computer Diagnostics & Actuator Adaptation
+            </span>
+            <span class="text-xs font-mono text-amber-400 font-bold">₹1,500 base</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-white/5 cursor-pointer">
+            <span class="flex items-center gap-3 text-sm">
+              <input type="checkbox" class="calc-service accent-amber-400 h-4 w-4" value="2000" />
+              Full Cabin Steam Extraction & AC Ozone Sanitization
+            </span>
+            <span class="text-xs font-mono text-amber-400 font-bold">₹2,000 base</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3.5 rounded-xl bg-slate-950/60 border border-white/5 cursor-pointer">
+            <span class="flex items-center gap-3 text-sm">
+              <input type="checkbox" class="calc-service accent-amber-400 h-4 w-4" value="6500" />
+              10H Graphene Ceramic Shield & Paint Polish
+            </span>
+            <span class="text-xs font-mono text-amber-400 font-bold">₹6,500 base</span>
+          </label>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between p-6 rounded-2xl bg-amber-400 text-slate-950 gap-4">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-900">Estimated Total Package Cost</div>
+            <div class="text-3xl font-black" id="total-price">₹2,800*</div>
+          </div>
+          <a href="#book" class="bg-slate-950 text-amber-400 hover:bg-slate-900 font-black text-xs uppercase px-6 py-3 rounded-xl transition tracking-wider shadow-lg">
+            Lock Estimate & Book Slot
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING BAY (DIRECT WHATSAPP) ================= -->
+  <section id="book" class="py-20 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="glass p-8 sm:p-12 rounded-3xl border border-white/10 relative">
+      <div class="text-center mb-8">
+        <span class="text-amber-400 font-mono text-xs uppercase font-bold tracking-widest">Reserve Your Spot</span>
+        <h2 class="text-3xl font-black text-white mt-1">Book Workshop Bay Slot</h2>
+        <p class="text-slate-400 text-sm mt-2">Dispatches directly to workshop technicians via WhatsApp for instant confirmation.</p>
+      </div>
+
+      <form id="booking-form" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Customer Name</label>
+          <input type="text" id="cust-name" required placeholder="Arun" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone Number</label>
+          <input type="tel" id="cust-phone" required placeholder="+91 91598 55555" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Car Model & Year</label>
+          <input type="text" id="cust-car" required placeholder="Volkswagen Jetta / Polo GT / Skoda Slavia" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Required Job</label>
+          <select id="cust-service" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm">
+            <option>General Service & Engine Oil Flush</option>
+            <option>Computer OBD Diagnostics & ECU Scan</option>
+            <option>10H Graphene Ceramic Coating</option>
+            <option>DSG / Manual Transmission Service</option>
+            <option>Brake Rotor / Pad Renewal</option>
+            <option>Air Conditioning Overhaul & Gas</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Preferred Service Date</label>
+          <input type="date" id="cust-date" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-400 text-sm" />
+        </div>
+        <div class="sm:col-span-2 pt-2">
+          <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-black py-4 rounded-xl text-sm uppercase tracking-wider transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="h-4 w-4"></i> Dispatch Reservation via WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION & CONTACT ================= -->
+  <section id="contact" class="py-20 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <span class="text-amber-400 font-mono text-xs uppercase font-bold tracking-widest">Find The Workshop</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white">Visit Our Center</h2>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          Equipped with 4 hydraulic hoists, zero-dust paint/ceramic booth, and specialized German computer scan equipment.
+        </p>
+
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start gap-4">
+            <div class="p-3 glass rounded-xl text-amber-400 shrink-0">
+              <i data-lucide="map-pin" class="h-5 w-5"></i>
+            </div>
+            <div>
+              <div class="font-bold text-white text-sm">Workshop Facility</div>
+              <div class="text-xs text-slate-400 mt-1">Main Facility • Direct Hoist Access</div>
+              <a href="https://share.google/w7ptmZttyataqMZDj" target="_blank" class="inline-flex items-center gap-1 text-xs text-amber-400 font-semibold mt-1.5 hover:underline">
+                Open in Google Maps <i data-lucide="external-link" class="h-3 w-3"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="p-3 glass rounded-xl text-amber-400 shrink-0">
+              <i data-lucide="clock" class="h-5 w-5"></i>
+            </div>
+            <div>
+              <div class="font-bold text-white text-sm">Operating Hours</div>
+              <div class="text-xs text-slate-400 mt-0.5">Monday – Saturday: 8:30 AM – 7:30 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-80 rounded-3xl overflow-hidden glass shadow-2xl border border-white/10">
+        <iframe 
+          title="Service Center Location"
+          class="w-full h-full border-0" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1824701239967!2d76.9991!3d11.0245!2m3!1f0!2f0!3f0!3m2!1i1024!2f768!4f13.1!3m3!1m2!1s0x3ba8582ea69d3a77%3A0xb35a39eb8c01bbf8!2sPeelamedu%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/10 py-8 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2 text-white font-bold">
+        <span class="text-amber-400">APEX</span> AUTO LABS
+      </div>
+      <div>&copy; 2026 Apex Labs. All Systems Nominal.</div>
+    </div>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    lucide.createIcons();
+
+    /* 1. SCHEMATIC HOTSPOT DATA */
+    const hotspotData = {
+      engine: {
+        id: "SYS-ENG-01",
+        title: "ECU & Powertrain Diagnostics",
+        desc: "Live adaptation scan clearing check-engine codes, checking ignition coil timings, turbo pressure curves, and injector balances.",
+        time: "45 Minutes",
+        spec: "OEM OBD-II Protocols"
+      },
+      paint: {
+        id: "SYS-SURF-02",
+        title: "10H Graphene Ceramic Shield",
+        desc: "Measurement of clear-coat thickness via digital gauge, multi-stage paint correction, and covalent ceramic matrix application.",
+        time: "4 - 6 Hours",
+        spec: "9H/10H Diamond Hardness"
+      },
+      wheels: {
+        id: "SYS-CHAS-03",
+        title: "Braking & Laser Alignment",
+        desc: "Computerized 3D camera wheel alignment, brake rotor micrometer thickness check, Brembo pad renewal, and fluid boiling test.",
+        time: "60 Minutes",
+        spec: "0.01° Laser Accuracy"
+      },
+      cabin: {
+        id: "SYS-INT-04",
+        title: "Ozone Cabin Spa & HVAC",
+        desc: "Deep high-temperature steam extraction of upholstery, leather nourishment, and ozone gas fumigation destroying 99.9% of bacteria.",
+        time: "90 Minutes",
+        spec: "ISO Clean Bio-Sanitized"
+      }
+    };
+
+    function showHotspot(key) {
+      const data = hotspotData[key];
+      if (!data) return;
+      document.getElementById('hud-id').textContent = data.id;
+      document.getElementById('hud-title').textContent = data.title;
+      document.getElementById('hud-desc').textContent = data.desc;
+      document.getElementById('hud-time').textContent = data.time;
+      document.getElementById('hud-spec').textContent = data.spec;
+    }
+
+    /* 2. ESTIMATOR & PRICING */
+    let currentMultiplier = 1;
+    const vehicleBtns = document.querySelectorAll('.vehicle-btn');
+    const serviceCheckboxes = document.querySelectorAll('.calc-service');
+    const priceDisplay = document.getElementById('total-price');
+
+    function calculateTotal() {
+      let subtotal = 0;
+      serviceCheckboxes.forEach(cb => {
+        if (cb.checked) subtotal += parseFloat(cb.value);
+      });
+      const total = Math.round(subtotal * currentMultiplier);
+      priceDisplay.textContent = `₹${total.toLocaleString('en-IN')}*`;
+    }
+
+    vehicleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        vehicleBtns.forEach(b => {
+          b.classList.remove('border-amber-400', 'bg-amber-400/10', 'text-amber-300');
+          b.classList.add('border-white/10', 'text-slate-300');
+        });
+        btn.classList.add('border-amber-400', 'bg-amber-400/10', 'text-amber-300');
+        btn.classList.remove('border-white/10', 'text-slate-300');
+        currentMultiplier = parseFloat(btn.dataset.multiplier);
+        calculateTotal();
+      });
+    });
+
+    serviceCheckboxes.forEach(cb => cb.addEventListener('change', calculateTotal));
+
+    /* 3. DIRECT WHATSAPP DISPATCH */
+    const form = document.getElementById('booking-form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const phone = document.getElementById('cust-phone').value;
+      const car = document.getElementById('cust-car').value;
+      const service = document.getElementById('cust-service').value;
+      const date = document.getElementById('cust-date').value;
+
+      const message = `Hello Apex Auto Labs,%0A%0AI would like to reserve a workshop bay slot:%0A• *Customer Name:* ${encodeURIComponent(name)}%0A• *Phone:* ${encodeURIComponent(phone)}%0A• *Car Model:* ${encodeURIComponent(car)}%0A• *Service Required:* ${encodeURIComponent(service)}%0A• *Preferred Date:* ${encodeURIComponent(date)}%0A%0APlease confirm slot availability.`;
+
+      window.open(`https://wa.me/919159855555?text=${message}`, '_blank');
+    });
+  </script>
+</body>
+</html>
+
